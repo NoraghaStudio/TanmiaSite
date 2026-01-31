@@ -69,18 +69,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const nav = document.querySelector('nav');
 
     menuBtn.addEventListener('click', () => {
-        if (nav.style.display === 'block') {
-            nav.style.display = 'none';
-        } else {
-            nav.style.display = 'block';
-            nav.style.position = 'absolute';
-            nav.style.top = '100%';
-            nav.style.left = '0';
-            nav.style.width = '100%';
-            nav.style.background = 'white';
-            nav.style.padding = '20px';
-            nav.style.boxShadow = '0 5px 10px rgba(0,0,0,0.1)';
-        }
+        nav.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('active');
+        });
     });
 
     // Unified Gallery Controller with Swipe Support
