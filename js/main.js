@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-// Main JavaScript
+
 
 document.addEventListener('DOMContentLoaded', () => {
 
