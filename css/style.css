@@ -124,6 +124,7 @@ header .container {
     .logo-text {
         font-size: 1.1rem;
     }
+
     .logo img {
         height: 45px !important;
     }
@@ -439,9 +440,11 @@ nav a:hover::after {
     .feature-card {
         padding: 25px 20px;
     }
+
     .feature-card .icon {
         font-size: 2rem;
     }
+
     .feature-card h3 {
         font-size: 1.2rem;
     }
@@ -657,7 +660,7 @@ nav a:hover::after {
         gap: 30px;
         text-align: center;
     }
-    
+
     .gaina-text h3 {
         font-size: 1.8rem;
     }
@@ -1080,7 +1083,7 @@ footer {
         width: 100%;
         background: white;
         padding: 20px;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         z-index: 999;
         max-height: calc(100vh - 80px);
         overflow-y: auto;
@@ -1124,7 +1127,7 @@ footer {
         border-radius: 0;
         margin: 10px 0 30px;
     }
-    
+
     .main-display {
         border-radius: 8px;
     }
@@ -1437,4 +1440,77 @@ footer {
         margin-bottom: 20px;
         justify-content: center;
     }
+}
+
+/* Premium Contact Form */
+.contact-form-container {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0, 78, 146, 0.08);
+    border: 1px solid rgba(0, 78, 146, 0.05);
+}
+
+.premium-form .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 600px) {
+    .premium-form .form-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 700;
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 15px 20px;
+    border-radius: 12px;
+    border: 2px solid #edf2f7;
+    background: #f8fafc;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
+    width: 100%;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    background: var(--white);
+    box-shadow: 0 0 0 4px rgba(0, 198, 255, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.premium-form .btn {
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.premium-form .btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 198, 255, 0.4);
 }

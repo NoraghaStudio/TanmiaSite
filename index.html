@@ -521,8 +521,57 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container" style="max-width: 800px;">
+            <div class="section-header">
+                <h2>اطلب <span class="text-gradient">خدماتنا</span></h2>
+                <div class="line"></div>
+                <p style="margin-top: 20px;">دعنا نساعدك في حماية مشروعك بأحدث التقنيات. املأ النموذج وسنتواصل معك
+                    قريباً.</p>
+            </div>
+
+            <div class="contact-form-container animate-up">
+                <form id="request-form" action="https://formspree.io/f/mykpnrlq" method="POST" class="premium-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">الاسم بالكامل</label>
+                            <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">رقم الجوال</label>
+                            <input type="tel" id="phone" name="phone" placeholder="05xxxxxxxx" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">نوع الخدمة/المشروع</label>
+                            <select id="subject" name="_subject">
+                                <option value="gaina">تقنية جاينا (العزل الحراري)</option>
+                                <option value="construction">مقاولات عامة وإنشاءات</option>
+                                <option value="consultation">استشارة هندسية</option>
+                                <option value="other">أخرى</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">تفاصيل الطلب</label>
+                        <textarea id="message" name="message" rows="5" placeholder="اكتب تفاصيل طلبك هنا..."
+                            required></textarea>
+                    </div>
+                    <input type="hidden" name="_next" value="https://dccc-sa.com/thanks.html">
+                    <button type="submit" class="btn btn-primary"
+                        style="width: 100%; border-radius: 12px; padding: 15px;">إرسال الطلب <i
+                            class="fas fa-paper-plane" style="margin-right: 10px;"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer id="contact">
+    <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-info">
@@ -540,9 +589,9 @@
                 </div>
                 <div class="footer-contact">
                     <h3>تواصل معنا</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> العنوان الرئيسي للمقر</p>
-                    <p><i class="fas fa-phone"></i> [رقم الهاتف]</p>
-                    <p><i class="fas fa-envelope"></i> info@tanmiya.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> المملكة العربية السعودية</p>
+                    <p><i class="fas fa-phone"></i> 0578404004</p>
+                    <p><i class="fas fa-envelope"></i> Info@dccc-sa.com</p>
                 </div>
             </div>
             <div class="copyright">

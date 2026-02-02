@@ -220,13 +220,24 @@ document.addEventListener('DOMContentLoaded', () => {
             const img = this.querySelector('img');
             if (img) {
                 // Initialize as a single-image gallery
-                currentImages = [img.src || img.getAttribute('src')]; 
+                currentImages = [img.src || img.getAttribute('src')];
                 currentIndexLB = 0;
-                
+
                 lightboxModal.style.display = 'block';
                 lightboxImg.src = currentImages[0];
                 document.body.style.overflow = 'hidden';
             }
         });
     });
+
+    // Form Submission Handling (Standard - allows Formspree verification)
+    const requestForm = document.getElementById('request-form');
+    if (requestForm) {
+        requestForm.addEventListener('submit', function () {
+            const submitBtn = requestForm.querySelector('button[type="submit"]');
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> جاري الإرسال...';
+            // Form submits normally (no preventDefault)
+        });
+    }
 });
