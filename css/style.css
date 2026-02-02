@@ -163,10 +163,58 @@ nav a:hover::after {
     width: 100%;
 }
 
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
 .mobile-menu-btn {
-    display: none;
     font-size: 1.5rem;
     cursor: pointer;
+    color: var(--primary-color);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.mobile-menu-btn:hover {
+    background: rgba(0, 78, 146, 0.05);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.lang-btn {
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.lang-btn:hover {
+    background: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 78, 146, 0.2);
+}
+
+@media (min-width: 769px) {
+    .mobile-menu-btn {
+        display: none;
+    }
 }
 
 /* Hero Section */
@@ -1070,8 +1118,12 @@ footer {
         display: none;
     }
 
+    .header-actions {
+        display: flex;
+    }
+
     .mobile-menu-btn {
-        display: block;
+        display: flex;
     }
 
     /* Better Mobile Nav Styling */

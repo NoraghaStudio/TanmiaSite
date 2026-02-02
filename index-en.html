@@ -34,15 +34,17 @@
             /* You might want to switch to a Latin font like Roboto or Open Sans */
         }
 
-        .gaina-intro {
-            flex-direction: row-reverse;
-            /* Flip the image/text layout for LTR since original was RTL but flex-direction row */
-        }
+        @media (min-width: 769px) {
+            .gaina-intro {
+                flex-direction: row-reverse;
+                /* Flip the image/text layout for LTR since original was RTL but flex-direction row */
+            }
 
-        /* Fix for specific sections to look good in LTR */
-        .gaina-intro:nth-child(even) {
-            flex-direction: row;
-            /* Keep alternating pattern */
+            /* Fix for specific sections to look good in LTR */
+            .gaina-intro:nth-child(even) {
+                flex-direction: row;
+                /* Keep alternating pattern */
+            }
         }
 
         nav a::after {
@@ -111,22 +113,24 @@
                 <img src="logo.png" alt="Tanmia & Construction Co." style="max-height: 80px;">
                 <span class="logo-text">Tanmia & Construction Co.</span>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about-company">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#work-photos">Experience</a></li>
-                    <li><a href="#agencies">Agencies</a></li>
-                    <li><a href="#gaina" class="special-link">Gaina</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="index.html" class="lang-btn"
-                            style="color: var(--primary-color); border: 1px solid var(--primary-color); padding: 5px 15px; border-radius: 20px;">العربية</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about-company">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#work-photos">Experience</a></li>
+                        <li><a href="#agencies">Agencies</a></li>
+                        <li><a href="#gaina" class="special-link">Gaina</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="index.html" class="lang-btn">العربية</a>
+                    <div class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
