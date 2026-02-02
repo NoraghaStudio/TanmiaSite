@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شركة التنمية والتعمير | Development and Construction Co.</title>
+    <title>Tanmia & Construction Co. | Development and Construction Co.</title>
     <meta name="description"
-        content="شركة التنمية والتعمير - رائدة في مجال المقاولات والحلول الهندسية المتقدمة. الوكيل الحصري لمنتجات Gaina.">
+        content="Tanmia & Construction Co. - A leader in contracting and advanced engineering solutions. Exclusive agent for Gaina products.">
 
     <!-- Social Media Meta Tags -->
-    <meta property="og:title" content="شركة التنمية والتعمير | DCCC">
-    <meta property="og:description" content="نقدم أفضل حلول المقاولات والتعمير في المملكة العربية السعودية.">
-    <meta property="og:url" content="https://dccc-sa.com">
+    <meta property="og:title" content="Tanmia & Construction Co. | DCCC">
+    <meta property="og:description"
+        content="We provide the best contracting and construction solutions in Saudi Arabia.">
+    <meta property="og:url" content="https://dccc-sa.com/index-en.html">
     <meta property="og:image" content="https://dccc-sa.com/logo2.png">
     <meta property="og:type" content="website">
 
@@ -26,6 +27,79 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        /* LTR Overrides */
+        body {
+            font-family: 'Tajawal', sans-serif;
+            /* You might want to switch to a Latin font like Roboto or Open Sans */
+        }
+
+        .gaina-intro {
+            flex-direction: row-reverse;
+            /* Flip the image/text layout for LTR since original was RTL but flex-direction row */
+        }
+
+        /* Fix for specific sections to look good in LTR */
+        .gaina-intro:nth-child(even) {
+            flex-direction: row;
+            /* Keep alternating pattern */
+        }
+
+        nav a::after {
+            left: 0;
+            right: auto;
+        }
+
+        .next-lightbox {
+            right: 15px;
+            left: auto;
+            transform: scaleX(-1);
+            /* Flip arrow if needed or use different icon */
+        }
+
+        .prev-lightbox {
+            left: 15px;
+            right: auto;
+            transform: scaleX(-1);
+        }
+
+        /* Reset transforms for icons if they are direction sensitive */
+        .fa-chevron-left,
+        .fa-chevron-right {
+            /* standard icons usually point correctly in LTR, but check usage */
+        }
+
+        /* Correct the zig-zag for LTR */
+        .gaina-intro .gaina-visual {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        /* Ensure forms align left */
+        .form-group label {
+            text-align: left;
+            display: block;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            text-align: left;
+        }
+
+        /* Footer alignment */
+        .footer-grid {
+            text-align: left;
+        }
+
+        .footer-info,
+        .footer-links,
+        .footer-contact {
+            text-align: left;
+        }
+
+        /* Specific overrides inline in the original HTML need attention */
+    </style>
 </head>
 
 <body>
@@ -34,20 +108,20 @@
     <header id="header">
         <div class="container">
             <div class="logo">
-                <img src="logo.png" alt="شركة التنمية والتعمير" style="max-height: 80px;">
-                <span class="logo-text">شركة التنمية والتعمير</span>
+                <img src="logo.png" alt="Tanmia & Construction Co." style="max-height: 80px;">
+                <span class="logo-text">Tanmia & Construction Co.</span>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#hero">الرئيسية</a></li>
-                    <li><a href="#about-company">عن الشركة</a></li>
-                    <li><a href="#projects">مشاريعنا</a></li>
-                    <li><a href="#work-photos">تجاربنا</a></li>
-                    <li><a href="#agencies">وكالاتنا</a></li>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about-company">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#work-photos">Experience</a></li>
+                    <li><a href="#agencies">Agencies</a></li>
                     <li><a href="#gaina" class="special-link">Gaina</a></li>
-                    <li><a href="#contact">تواصل معنا</a></li>
-                    <li><a href="index-en.html" class="lang-btn"
-                            style="color: var(--primary-color); border: 1px solid var(--primary-color); padding: 5px 15px; border-radius: 20px;">English</a>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html" class="lang-btn"
+                            style="color: var(--primary-color); border: 1px solid var(--primary-color); padding: 5px 15px; border-radius: 20px;">العربية</a>
                     </li>
                 </ul>
             </nav>
@@ -61,11 +135,11 @@
     <section id="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content container">
-            <h1 class="animate-up">شركة التنمية والتعمير</h1>
-            <p class="animate-up delay-1">نبني المستقبل، بأحدث التقنيات</p>
+            <h1 class="animate-up">Tanmia & Construction Co.</h1>
+            <p class="animate-up delay-1">Building the Future with Advanced Technologies</p>
             <div class="hero-btns animate-up delay-3">
-                <a href="#projects" class="btn btn-primary">تصفح مشاريعنا</a>
-                <a href="#gaina" class="btn btn-secondary">تعرف على جاينا</a>
+                <a href="#projects" class="btn btn-primary">Browse Projects</a>
+                <a href="#gaina" class="btn btn-secondary">Discover Gaina</a>
             </div>
         </div>
         <a href="#about-company" class="scroll-down">
@@ -77,21 +151,21 @@
     <section id="about-company" class="section">
         <div class="container">
             <div class="section-header">
-                <h2>من <span class="text-gradient">نحن</span></h2>
+                <h2>Who <span class="text-gradient">We Are</span></h2>
                 <div class="line"></div>
             </div>
             <div class="about-grid">
                 <div class="about-text">
-                    <h3>الرؤية والرسالة</h3>
-                    <p>تطمح الشركة لأن تكون رائدة في تقديم الخدمات الهندسية والحلول التكنولوجية في المملكة، مع التركيز
-                        على النزاهة والجودة والابتكار.</p>
+                    <h3>Vision & Mission</h3>
+                    <p>The company aspires to be a leader in providing engineering services and technological solutions
+                        in the Kingdom, focusing on integrity, quality, and innovation.</p>
 
-                    <h3 style="margin-top: 20px;">فلسفة العمل (قيمنا)</h3>
-                    <p>تعتمد الشركة على العمل الجماعي، توظيف المواهب الشابة، والالتزام الصارم بمواعيد التسليم حتى في
-                        أكثر المشاريع تعقيداً.</p>
+                    <h3 style="margin-top: 20px;">Work Philosophy (Our Values)</h3>
+                    <p>The company relies on teamwork, employing young talent, and strict adherence to delivery
+                        deadlines even in the most complex projects.</p>
                 </div>
                 <div class="about-image animate-up" style="display: flex; justify-content: center;">
-                    <img src="flag.jpg" alt="رؤية الشركة" class="shadow-premium"
+                    <img src="flag.jpg" alt="Company Vision" class="shadow-premium"
                         style="border-radius: 20px; max-height: 400px; width: auto; object-fit: cover;">
                 </div>
             </div>
@@ -102,15 +176,16 @@
     <section id="projects" class="section bg-light">
         <div class="container">
             <div class="section-header">
-                <h2>أعمال <span class="text-gradient">ومشاريع الشركة</span></h2>
+                <h2>Company <span class="text-gradient">Projects & Works</span></h2>
                 <div class="line"></div>
             </div>
 
             <!-- Services Intro -->
             <div class="services-intro"
                 style="margin-bottom: 40px; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto;">
-                <p style="font-size: 1.2rem;">تتخصص الشركة في تنفيذ المشاريع الإنشائية بمختلف أنواعها: المباني السكنية،
-                    التجارية، الأبراج، مشاريع الطرق، وأعمال البنية التحتية، بالإضافة إلى أعمال "الاندسكيب" والتشطيبات.
+                <p style="font-size: 1.2rem;">The company specializes in executing various construction projects:
+                    residential buildings, commercial complexes, towers, road projects, and infrastructure works, in
+                    addition to landscaping and finishing works.
                 </p>
             </div>
 
@@ -118,24 +193,24 @@
             <div class="product-gallery-container animate-up" id="records-product-container"
                 data-images='["list4.jpg", "list3.jpg", "list2.jpg", "list1.jpg"]'>
                 <div class="section-header" style="text-align: center; margin-bottom: 30px;">
-                    <h2><span class="text-gradient">سجل مشاريعنا</span></h2>
+                    <h2><span class="text-gradient">Project Records</span></h2>
                     <div class="line" style="margin: 10px auto;"></div>
                 </div>
 
                 <div class="product-gallery">
                     <div class="main-display">
                         <div class="main-img-wrapper lightbox-btn" id="records-main-view" data-src="list4.jpg">
-                            <img src="list4.jpg" alt="سجل المشاريع الرئيسي" id="main-gallery-img">
-                            <div class="zoom-hint"><i class="fas fa-search-plus"></i> انقر للتكبير</div>
+                            <img src="list4.jpg" alt="Main Project Record" id="main-gallery-img">
+                            <div class="zoom-hint"><i class="fas fa-search-plus"></i> Click to Zoom</div>
                         </div>
-                        <button class="gallery-control prev"><i class="fas fa-chevron-right"></i></button>
-                        <button class="gallery-control next"><i class="fas fa-chevron-left"></i></button>
+                        <button class="gallery-control prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="gallery-control next"><i class="fas fa-chevron-right"></i></button>
                     </div>
                 </div>
             </div>
 
             <div class="section-header" style="text-align: center; margin-bottom: 30px;">
-                <h2><span class="text-gradient">صور من أعمالنا</span></h2>
+                <h2><span class="text-gradient">Photos of Our Work</span></h2>
                 <div class="line" style="margin: 10px auto;"></div>
             </div>
 
@@ -147,13 +222,13 @@
                         <div class="main-img-wrapper lightbox-btn" id="projects-main-view"
                             data-src="Presentations/pictures/شركة-التنمية-والتعمير_compressed/شركة التنمية والتعمير_compressed_page-0014.jpg">
                             <img src="Presentations/pictures/شركة-التنمية-والتعمير_compressed/شركة التنمية والتعمير_compressed_page-0014.jpg"
-                                alt="مشروع أساسي" id="main-projects-img">
-                            <div class="zoom-hint"><i class="fas fa-search-plus"></i> انقر للتكبير</div>
+                                alt="Main Project" id="main-projects-img">
+                            <div class="zoom-hint"><i class="fas fa-search-plus"></i> Click to Zoom</div>
                         </div>
                         <button class="gallery-control prev" id="projects-prev" aria-label="Previous"><i
-                                class="fas fa-chevron-right"></i></button>
-                        <button class="gallery-control next" id="projects-next" aria-label="Next"><i
                                 class="fas fa-chevron-left"></i></button>
+                        <button class="gallery-control next" id="projects-next" aria-label="Next"><i
+                                class="fas fa-chevron-right"></i></button>
                     </div>
                 </div>
             </div>
@@ -165,20 +240,20 @@
     <section id="agencies" class="section">
         <div class="container">
             <div class="section-header">
-                <h2>وكالاتنا <span class="text-gradient">التكنولوجية</span></h2>
+                <h2>Our <span class="text-gradient">Tech Agencies</span></h2>
                 <div class="line"></div>
             </div>
             <div class="exclusive-agent-card animate-up">
                 <div class="agent-badge">
                     <i class="fas fa-award"></i>
-                    <span>وكيل حصري معتمد</span>
+                    <span>Authorized Exclusive Agent</span>
                 </div>
                 <div class="agent-content">
-                    <img src="logo.png" alt="الشركة التنمية والتعمير" class="agent-logo-small">
+                    <img src="logo.png" alt="Tanmia & Construction Co." class="agent-logo-small">
                     <div class="agent-info">
-                        <h3>وكالة GAINA العالمية</h3>
-                        <p>نحن الوكيل الحصري والوحيد المعتمد لتقنية "جاينا" (GAINA) اليابانية في المملكة العربية
-                            السعودية، ملتزمون بتقديم أعلى معايير الجودة والضمان الفني.</p>
+                        <h3>GAINA Global Agency</h3>
+                        <p>We are the exclusive and sole authorized agent for the Japanese "GAINA" technology in Saudi
+                            Arabia, committed to providing the highest quality standards and technical warranty.</p>
                     </div>
                 </div>
             </div>
@@ -197,14 +272,15 @@
             <!-- 1. Definition -->
             <div class="gaina-intro">
                 <div class="gaina-text">
-                    <h3>تكنولوجيا الفضاء لخدمتك</h3>
-                    <p>جاينا هي تكنولوجيا سيراميك متطورة (دهان عازل) مشتقة من أبحاث وكالة الفضاء اليابانية (JAXA) والتي
-                        تستخدم لتغطية رؤوس صواريخ الفضاء لحمايتها من الحرارة الشديدة.</p>
-                    <p class="gaina-bridge">"هنا يلتقي الإعمار بالتكنولوجيا.. نستخدم حلول وكالة الفضاء اليابانية (JAXA)
-                        لنقدم لك أفضل عزل حراري وصوتي في العالم."</p>
+                    <h3>Space Technology at Your Service</h3>
+                    <p>GAINA is an advanced ceramic technology (insulating paint) derived from JAXA (Japan Aerospace
+                        Exploration Agency) research, used to cover rocket nose cones to protect them from extreme heat.
+                    </p>
+                    <p class="gaina-bridge">"Here construction meets technology.. We use JAXA solutions to provide you
+                        with the best thermal and acoustic insulation in the world."</p>
                 </div>
                 <div class="gaina-visual shadow-premium">
-                    <img src="Gaina and space.png" alt="تكنولوجيا الفضاء لجاينا">
+                    <img src="Gaina and space.png" alt="Gaina Space Technology">
                 </div>
             </div>
 
@@ -212,53 +288,55 @@
             <div class="gaina-specs-banner animate-up">
                 <div class="spec-item">
                     <i class="fas fa-microchip"></i>
-                    <span>نانو سيراميك متطور</span>
+                    <span>Advanced Nano Ceramic</span>
                 </div>
                 <div class="spec-item">
                     <i class="fas fa-layer-group"></i>
-                    <span>سماكة 500 ميكرون (نفس سماكة الدهان العادي)</span>
+                    <span>500 microns thickness (Same as regular paint)</span>
                 </div>
                 <div class="spec-item">
                     <i class="fas fa-shield-alt"></i>
-                    <span>ضمان 10 سنوات (يدوم أكثر من 20 سنة)</span>
+                    <span>10-year warranty (Lasts over 20 years)</span>
                 </div>
             </div>
 
             <!-- 2. Core Benefits Grid -->
             <div class="section-header" style="margin-top: 80px;">
-                <h3>الفوائد والمميزات الثورية</h3>
+                <h3>Revolutionary Benefits & Features</h3>
             </div>
 
             <div class="features-grid">
                 <div class="feature-card dark-card">
                     <div class="icon"><i class="fas fa-temperature-low"></i></div>
-                    <h3>عزل حراري فائق</h3>
-                    <p>يعزل الحرارة حتى 30 درجة مئوية، مما يخلق بيئة داخلية مريحة حتى في أقسى الظروف.</p>
+                    <h3>Superior Thermal Insulation</h3>
+                    <p>Insulates heat up to 30°C, creating a comfortable indoor environment even in harshest conditions.
+                    </p>
                 </div>
                 <div class="feature-card dark-card">
                     <div class="icon"><i class="fas fa-bolt"></i></div>
-                    <h3>توفير الطاقة (51%)</h3>
-                    <p>يحتفظ بدرجة الحرارة ويقلل عمل الكمبريسور، مما يوفر تكاليف الكهرباء بنسبة تصل إلى 51%.</p>
+                    <h3>Energy Saving (51%)</h3>
+                    <p>Maintains temperature and reduces compressor work, saving electricity costs up to 51%.</p>
                 </div>
                 <div class="feature-card dark-card">
                     <div class="icon"><i class="fas fa-tint-slash"></i></div>
-                    <h3>عزل مائي ورطوبة</h3>
-                    <p>يعمل كدرع واقٍ ضد تسرب المياه والرطوبة، مما يحمي هيكل البناء تماماً.</p>
+                    <h3>Waterproofing & Moisture</h3>
+                    <p>Acts as a protective shield against water leakage and humidity, fully protecting the building
+                        structure.</p>
                 </div>
                 <div class="feature-card dark-card">
                     <div class="icon"><i class="fas fa-fire-extinguisher"></i></div>
-                    <h3>مقاومة الحريق</h3>
-                    <p>مقاوم للحريق حتى 1000 درجة مئوية لمدة ساعة كاملة، مع أمان عالٍ ضد انتشار اللهب.</p>
+                    <h3>Fire Resistance</h3>
+                    <p>Fire resistant up to 1000°C for a full hour, with high safety against flame spread.</p>
                 </div>
                 <div class="feature-card dark-card">
                     <div class="icon"><i class="fas fa-volume-mute"></i></div>
-                    <h3>عزل صوتي فعال</h3>
-                    <p>يخفف الضوضاء الخارجية والداخلية بشكل ملموس، موفراً هدوءاً مثالياً.</p>
+                    <h3>Effective Acoustic Insulation</h3>
+                    <p>Significantly reduces external and internal noise, providing optimal quietness.</p>
                 </div>
                 <div class="feature-card dark-card">
                     <div class="icon"><i class="fas fa-sun"></i></div>
-                    <h3>مقاومة UV و IR</h3>
-                    <p>لا يتأثر بالأشعة فوق البنفسجية أو تحت الحمراء، مما يحفظ لونه وخصائصه لعقود.</p>
+                    <h3>UV & IR Resistance</h3>
+                    <p>Unaffected by ultraviolet or infrared rays, preserving its color and properties for decades.</p>
                 </div>
             </div>
 
@@ -266,39 +344,41 @@
             <div class="eco-benefits-container animate-up">
                 <div class="eco-benefit">
                     <i class="fas fa-leaf"></i>
-                    <h4>صديق للبيئة</h4>
-                    <p>منتج طبيعي غير كيميائي، ليس له أي رائحة وآمن تماماً للصحة.</p>
+                    <h4>Eco-Friendly</h4>
+                    <p>Natural non-chemical product, odorless and completely safe for health.</p>
                 </div>
                 <div class="eco-benefit">
                     <i class="fas fa-magic"></i>
-                    <h4>إزالة الروائح</h4>
-                    <p>يفرز أيونات سالبة تفتت وتزيل الروائح الكريهة من المكان تلقائياً.</p>
+                    <h4>Odor Removal</h4>
+                    <p>Releases negative ions that break down and remove bad odors automatically.</p>
                 </div>
                 <div class="eco-benefit">
                     <i class="fas fa-broom"></i>
-                    <h4>سهل التنظيف</h4>
-                    <p>لا تلتصق به الأتربة بفضل تقنية النانو، مما يجعل صيانته وتنظيفه في غاية السهولة.</p>
+                    <h4>Easy to Clean</h4>
+                    <p>Dust does not stick to it thanks to nano-technology, making maintenance and cleaning very easy.
+                    </p>
                 </div>
                 <div class="eco-benefit">
                     <i class="fas fa-plug"></i>
-                    <h4>غير موصل للكهرباء</h4>
-                    <p>يضيف طبقة أمان إضافية بكونه مادة غير موصلة للتيار الكهربائي.</p>
+                    <h4>Non-Conductive</h4>
+                    <p>Adds an extra safety layer by being a standard non-conductive material.</p>
                 </div>
             </div>
 
             <!-- 4. Applications and surfaces -->
             <div class="surfaces-section animate-up">
-                <h3>أين يمكنك استخدام جاينا؟</h3>
-                <p>يوضع على جميع الأسطح: خرسانة، حديد، قماش، خشب، أرضيات، أسفلت، وحتى الثلاجات والسندوتش بانل.</p>
+                <h3>Where can you use GAINA?</h3>
+                <p>Applied to all surfaces: Concrete, Iron, Fabric, Wood, Flooring, Asphalt, and even Refrigerators and
+                    Sandwich Panels.</p>
                 <div class="application-tags">
-                    <span>المستشفيات</span>
-                    <span>الفنادق</span>
-                    <span>المستودعات</span>
-                    <span>الثلاجات</span>
-                    <span>الأبراج</span>
-                    <span>محطات الكهرباء</span>
-                    <span>الاتصالات</span>
-                    <span>الوحدات السكنية</span>
+                    <span>Hospitals</span>
+                    <span>Hotels</span>
+                    <span>Warehouses</span>
+                    <span>Refrigerators</span>
+                    <span>Towers</span>
+                    <span>Power Stations</span>
+                    <span>Telecom</span>
+                    <span>Residential Units</span>
                 </div>
             </div>
 
@@ -306,22 +386,22 @@
             <div class="roi-banner animate-up">
                 <div class="roi-icon"><i class="fas fa-hand-holding-usd"></i></div>
                 <div class="roi-text">
-                    <strong>ملاحظة اقتصادية:</strong>
-                    كل ما يتم إنفاقه في شراء المادة يتم استعادته لاحقاً من خلال التوفير الضخم في استهلاك الكهرباء وتقليل
-                    تكاليف الصيانة الدورية.
+                    <strong>Economic Note:</strong>
+                    Everything spent on purchasing the material is recovered later through massive savings in
+                    electricity consumption and reduced periodic maintenance costs.
                 </div>
             </div>
 
             <!-- 6. Aesthetic Diversity -->
             <div class="gaina-intro" style="margin-top: 80px; direction: ltr;">
-                <div class="gaina-text" style="direction: rtl;">
-                    <h3>التنوع الجمالي والألوان</h3>
-                    <p>لا يقتصر المنتج على الفائدة الوظيفية، بل يتوفر بـ 52 لوناً أساسياً ويمكن أن يصل إلى 300 لون
-                        لتناسب كافة التصاميم المعمارية.</p>
+                <div class="gaina-text" style="direction: ltr;">
+                    <h3>Aesthetic Diversity & Colors</h3>
+                    <p>The product is not limited to functional benefits, but is available in 52 basic colors and can
+                        reach up to 300 colors to suit all architectural designs.</p>
                 </div>
                 <div class="gaina-visual shadow-premium">
                     <img src="Presentations/pictures/GAINA-Presentation-Minicipality-R/GAINA Presentation Minicipality R_page-0003.jpg"
-                        alt="ألوان جاينا">
+                        alt="Gaina Colors">
                 </div>
             </div>
 
@@ -330,72 +410,72 @@
                 <!-- 1. Space Tech -->
                 <div class="gaina-intro animate-up">
                     <div class="gaina-text">
-                        <h3>تكنولوجيا الفضاء بين يديك</h3>
-                        <p>طلاء GAINA ولد من رحم الأبحاث الفضائية اليابانية (JAXA) ليمنحك جودة استثنائية وعزلًا حرارياً
-                            يفوق التوقعات.</p>
+                        <h3>Space Technology in Your Hands</h3>
+                        <p>GAINA paint was born from JAXA space research to give you exceptional quality and thermal
+                            insulation beyond expectations.</p>
                     </div>
                     <div class="gaina-visual shadow-premium standalone-lightbox main-img-wrapper">
-                        <img src="Presentations/New/الصورة الأولى.jpeg" alt="تكنولوجيا الفضاء">
-                        <div class="zoom-hint"><i class="fas fa-search-plus"></i> انقر للتكبير</div>
+                        <img src="Presentations/New/الصورة الأولى.jpeg" alt="Space Technology">
+                        <div class="zoom-hint"><i class="fas fa-search-plus"></i> Click to Zoom</div>
                     </div>
                 </div>
 
                 <!-- 2. Smart Solutions -->
                 <div class="gaina-intro animate-up" style="direction: ltr;">
-                    <div class="gaina-text" style="direction: rtl;">
-                        <h3>حلول ذكية وشاملة</h3>
-                        <p>بفضل جزيئات السيراميك المجوفة، يوفر GAINA حماية متكاملة: عزل للصوت، مقاومة للحريق، منع
-                            التكثف، وخصائص مضادة للميكروبات.</p>
+                    <div class="gaina-text" style="direction: ltr;">
+                        <h3>Smart & Comprehensive Solutions</h3>
+                        <p>Thanks to hollow ceramic particles, GAINA provides integrated protection: Sound insulation,
+                            fire resistance, condensation prevention, and anti-microbial properties.</p>
                     </div>
                     <div class="gaina-visual shadow-premium standalone-lightbox main-img-wrapper">
-                        <img src="Presentations/New/الصورة الثانية.jpeg" alt="حلول ذكية">
-                        <div class="zoom-hint"><i class="fas fa-search-plus"></i> انقر للتكبير</div>
+                        <img src="Presentations/New/الصورة الثانية.jpeg" alt="Smart Solutions">
+                        <div class="zoom-hint"><i class="fas fa-search-plus"></i> Click to Zoom</div>
                     </div>
                 </div>
 
                 <!-- 3. Sustainable Investment -->
                 <div class="gaina-intro animate-up">
                     <div class="gaina-text">
-                        <h3>كفاءة استثمارية مستدامة</h3>
-                        <p>تكنولوجيا نانو متطورة تعمل على تحسين جودة الهواء وتوفير الطاقة، مما يجعله الخيار الأمثل
-                            للمباني والأسطح الزجاجية.</p>
+                        <h3>Sustainable Investment Efficiency</h3>
+                        <p>Advanced nano-technology improves air quality and saves energy, making it the ideal choice
+                            for buildings and glass surfaces.</p>
                     </div>
                     <div class="gaina-visual shadow-premium standalone-lightbox main-img-wrapper">
-                        <img src="Presentations/New/الصورة الثالثة.jpeg" alt="كفاءة استثمارية">
-                        <div class="zoom-hint"><i class="fas fa-search-plus"></i> انقر للتكبير</div>
+                        <img src="Presentations/New/الصورة الثالثة.jpeg" alt="Investment Efficiency">
+                        <div class="zoom-hint"><i class="fas fa-search-plus"></i> Click to Zoom</div>
                     </div>
                 </div>
 
                 <!-- 4. Long-lasting Protection -->
                 <div class="gaina-intro animate-up" style="direction: ltr;">
-                    <div class="gaina-text" style="direction: rtl;">
-                        <h3>حماية تدوم لعقود</h3>
-                        <p>عمر افتراضي يصل إلى 20 عاماً. يحمي مبناك من الأشعة فوق البنفسجية ويقلل من تمدد وتقلص الجدران
-                            الناتج عن الحرارة، ليدوم بناءك طويلاً.</p>
+                    <div class="gaina-text" style="direction: ltr;">
+                        <h3>Protection that Lasts for Decades</h3>
+                        <p>Lifespan of up to 20 years. Protects your building from UV rays and reduces wall expansion
+                            and contraction caused by heat, making your building last longer.</p>
                     </div>
                     <div class="gaina-visual shadow-premium standalone-lightbox main-img-wrapper">
-                        <img src="Presentations/New/الصورة الرابعة.jpeg" alt="حماية تدوم">
-                        <div class="zoom-hint"><i class="fas fa-search-plus"></i> انقر للتكبير</div>
+                        <img src="Presentations/New/الصورة الرابعة.jpeg" alt="Long-lasting Protection">
+                        <div class="zoom-hint"><i class="fas fa-search-plus"></i> Click to Zoom</div>
                     </div>
                 </div>
             </div>
 
             <!-- 7. Awards -->
             <div class="awards-section" style="text-align: center; margin-top: 80px;">
-                <h3 style="color: #fff; margin-bottom: 40px;">الجوائز والاعتمادات الدولية</h3>
+                <h3 style="color: #fff; margin-bottom: 40px;">International Awards & Accreditations</h3>
 
                 <!-- Grand Prize Section (Flipped Layout) -->
                 <div class="gaina-intro animate-up" style="margin-top: 40px;">
-                    <div class="gaina-text" style="text-align: right;">
-                        <h2 style="font-size: 2.5rem; margin-bottom: 20px;">الجائزة الكبرى</h2>
-                        <p style="font-size: 1.25rem; line-height: 1.8;">تم منح GAINA من قبل الحكومة
-                            اليابانية عبر وزارة الاقتصاد والتجارة والصناعة في عام 2017.</p>
-                        <p class="award-highlight" style="margin-top: 15px;">تم اختياره كأفضل منتج على الإطلاق يساهم في
-                            منع ظاهرة الاحتباس الحراري العالمي.</p>
+                    <div class="gaina-text" style="text-align: left;">
+                        <h2 style="font-size: 2.5rem; margin-bottom: 20px;">The Grand Prize</h2>
+                        <p style="font-size: 1.25rem; line-height: 1.8;">GAINA was awarded by the Japanese government
+                            via the Ministry of Economy, Trade and Industry in 2017.</p>
+                        <p class="award-highlight" style="margin-top: 15px;">Selected as the best product ever
+                            contributing to preventing global warming.</p>
                     </div>
                     <div class="award-logo-balance"
                         style="flex: 0.5; max-width: 180px; background: transparent; box-shadow: none;">
-                        <img src="Presentations/Award logo.png" alt="شعار الجائزة الكبرى لترشيد الطاقة"
+                        <img src="Presentations/Award logo.png" alt="Grand Prize Logo for Energy Conservation"
                             style="width: 100%; height: auto; object-fit: contain;">
                     </div>
                 </div>
@@ -403,7 +483,7 @@
                 <div class="other-awards animate-up" style="margin-top: 40px;">
                     <div class="unido-badge">
                         <i class="fas fa-certificate"></i>
-                        <span>مسجل لدى منظمة الأمم المتحدة للتنمية الصناعية (UNIDO)</span>
+                        <span>Registered with UNIDO (United Nations Industrial Development Organization)</span>
                     </div>
                 </div>
             </div>
@@ -411,103 +491,102 @@
             <!-- 8. Product Experiments (Videos) -->
             <div id="work-photos" style="margin-top: 80px;">
                 <div class="section-header">
-                    <h3>تجارب المنتج والاعتماد الفني</h3>
+                    <h3>Product Experiments & Technical Approval</h3>
                 </div>
 
-                <!-- Video 1: Text Right, Video Left (Introduction First) -->
+                <!-- Video 1 -->
                 <div class="video-zigzag-item animate-up">
                     <div class="gaina-text">
-                        <h3>التعريف بكامل تقنيات جاينا</h3>
-                        <p>فيديو تعريفي شامل يستعرض مجموعة تقنيات ورؤية "جاينا" في تقديم حلول هندسية ومعمارية مبتكرة
-                            تجمع
-                            بين القوة والاستدامة.</p>
+                        <h3>Introducing GAINA Technologies</h3>
+                        <p>A comprehensive introductory video reviewing the range of technologies and vision of "GAINA"
+                            in providing innovative engineering and architectural solutions combining strength and
+                            sustainability.</p>
                     </div>
                     <div class="zigzag-video shadow-premium">
                         <iframe src="https://player.vimeo.com/video/1160480211?portrait=0&title=0&byline=0"
                             allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-                            title="التعريف بجاينا"></iframe>
+                            title="Introduction to Gaina"></iframe>
                     </div>
                 </div>
 
-                <!-- Video 2: Video Right, Text Left (Reverse) -->
+                <!-- Video 2 -->
                 <div class="video-zigzag-item reverse animate-up">
                     <div class="gaina-text">
-                        <h3>اختبار العزل الحراري</h3>
-                        <p>تجربة عملية توضح قدرة "جاينا" المذهلة على حجب الحرارة ومنع نفاذها عبر الأسطح المختلفة، مما
-                            يؤدي
-                            لتخفيض درجات الحرارة بشكل كبير.</p>
+                        <h3>Thermal Insulation Test</h3>
+                        <p>A practical experiment showing GAINA's amazing ability to block heat and prevent it from
+                            penetrating various surfaces, leading to significant temperature reduction.</p>
                     </div>
                     <div class="zigzag-video shadow-premium">
                         <iframe src="https://player.vimeo.com/video/1160478661?portrait=0&title=0&byline=0"
                             allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-                            title="اختبار العزل الحراري"></iframe>
+                            title="Thermal Insulation Test"></iframe>
                     </div>
                 </div>
 
-                <!-- Video 3: Text Right, Video Left -->
+                <!-- Video 3 -->
                 <div class="video-zigzag-item animate-up">
                     <div class="gaina-text">
-                        <h3>صناعة حجر جاينا</h3>
-                        <p>نظرة خلف الكواليس على طريقة تصنيع حجر "جاينا" عالي الجودة، والعمليات التقنية التي تضمن صلابته
-                            وكفاءته العالية في العزل.</p>
+                        <h3>Gaina Stone Manufacturing</h3>
+                        <p>Behind the scenes of high-quality "Gaina" stone manufacturing, and the technical processes
+                            ensuring its hardness and high insulation efficiency.</p>
                     </div>
                     <div class="zigzag-video shadow-premium">
                         <iframe src="https://player.vimeo.com/video/1160482099?portrait=0&title=0&byline=0"
                             allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-                            title="صناعة حجر جاينا"></iframe>
+                            title="Manufacturing Gaina Stone"></iframe>
                     </div>
                 </div>
 
                 <!-- Product Experiments Images -->
 
-                <!-- Sharbatly (Resize requested) - NEXT PATTERN IS REVERSE -->
-
+                <!-- Sharbatly -->
                 <div class="gaina-intro animate-up" style="direction: ltr;">
-                    <div class="gaina-text" style="direction: rtl;">
-                        <h3>كفاءة أعلى.. استهلاك أقل!</h3>
-                        <p>نجحنا في تحسين كفاءة استهلاك الوقود بنسبة 26.8% في الشاحنات المبردة داخل المملكة. من خلال
-                            تقنية GAINA، نضمن لك وصولاً أسرع لدرجة التبريد المطلوبة والحفاظ عليها لفترة أطول، مما يقلل
-                            الجهد على المحرك ويوفر التكاليف التشغيلية بذكاء.</p>
+                    <div class="gaina-text" style="direction: ltr;">
+                        <h3>Higher Efficiency.. Lower Consumption!</h3>
+                        <p>We succeeded in improving fuel efficiency by 26.8% in refrigerated trucks within the Kingdom.
+                            Through GAINA technology, we ensure faster cooling to the desired temperature and
+                            maintaining it for longer, reducing engine stress and saving operational costs
+                            intelligently.</p>
                     </div>
                     <div class="gaina-visual shadow-premium standalone-lightbox main-img-wrapper">
-                        <img src="تجارب المنتج/شربتلي.jpeg" alt="تجربة شربتلي">
-                        <div class="zoom-hint"><i class="fas fa-search-plus"></i> انقر للتكبير</div>
+                        <img src="تجارب المنتج/شربتلي.jpeg" alt="Sharbatly Experiment">
+                        <div class="zoom-hint"><i class="fas fa-search-plus"></i> Click to Zoom</div>
                     </div>
                 </div>
 
-                <!-- Diesel Reduction - NEXT PATTERN IS NORMAL -->
-
+                <!-- Diesel Reduction -->
                 <div class="gaina-intro animate-up">
                     <div class="gaina-text">
-                        <h3>توفير استهلاك الوقود (الديزل)</h3>
-                        <p>نتائج تجربة خفض استهلاك الديزل في الثلاجات المتنقلة لشركة الشربتلي للفواكه عند استخدام تقنية
-                            حجر "جاينا". حقق المنتج نتائج استثنائية في تقليل التكاليف التشغيلية</p>
+                        <h3>Diesel Consumption Savings</h3>
+                        <p>Results of the experiment to reduce diesel consumption in mobile refrigerators for Sharbatly
+                            Fruit Company when using "Gaina" stone technology. The product achieved exceptional results
+                            in reducing operational costs.</p>
                     </div>
                     <div class="gaina-visual shadow-premium standalone-lightbox main-img-wrapper">
-                        <img src="Presentations/New/خفض الديزل.jpeg" alt="خفض الديزل">
-                        <div class="zoom-hint"><i class="fas fa-search-plus"></i> انقر للتكبير</div>
+                        <img src="Presentations/New/خفض الديزل.jpeg" alt="Diesel Reduction">
+                        <div class="zoom-hint"><i class="fas fa-search-plus"></i> Click to Zoom</div>
                     </div>
                 </div>
 
-                <!-- Before and After - NEXT PATTERN IS REVERSE -->
-
+                <!-- Before and After -->
                 <div class="gaina-intro animate-up" style="direction: ltr;">
-                    <div class="gaina-text" style="direction: rtl;">
-                        <h3>اختبارات خفض الحرارة (قبل وبعد)</h3>
-                        <p>تجربة عملية تبرز الفرق الشاسع في درجات الحرارة بين الأسطح العادية والأسطح المحمية بتقنية
-                            جاينا. تظهر النتائج قدرة فائقة على عكس أشعة الشمس ومنع امتصاص الحرارة، مما يساهم في خفض
-                            درجات الحرارة الداخلية بشكل ملموس ومستدام.</p>
+                    <div class="gaina-text" style="direction: ltr;">
+                        <h3>Heat Reduction Tests (Before & After)</h3>
+                        <p>A practical experiment highlighting the vast difference in temperatures between regular
+                            surfaces and surfaces protected by Gaina. The results show superior ability to reflect
+                            sunlight and prevent heat absorption, contributing to significant and sustainable indoor
+                            temperature reduction.</p>
                     </div>
                     <div class="gaina-visual shadow-premium standalone-lightbox main-img-wrapper">
-                        <img src="تجارب المنتج/قبل وبعد.jpg" alt="قبل وبعد">
-                        <div class="zoom-hint"><i class="fas fa-search-plus"></i> انقر للتكبير</div>
+                        <img src="تجارب المنتج/قبل وبعد.jpg" alt="Before and After">
+                        <div class="zoom-hint"><i class="fas fa-search-plus"></i> Click to Zoom</div>
                     </div>
                 </div>
             </div>
 
             <!-- 9. Case Studies -->
             <div class="section-header" style="margin-top: 60px;">
-                <h3>تطبيقات عملية ناجحة</h3>
+                <h3>Successful Case Studies</h3>
             </div>
 
             <!-- Product-Style Case Studies Gallery -->
@@ -518,13 +597,13 @@
                         <div class="main-img-wrapper lightbox-btn" id="cases-main-view"
                             data-src="Presentations/pictures/GAINA-Presentation-Minicipality-R/GAINA Presentation Minicipality R_page-0011.jpg">
                             <img src="Presentations/pictures/GAINA-Presentation-Minicipality-R/GAINA Presentation Minicipality R_page-0011.jpg"
-                                alt="تطبيقات عملية" id="main-cases-img">
-                            <div class="zoom-hint"><i class="fas fa-search-plus"></i> انقر للتكبير</div>
+                                alt="Case Studies" id="main-cases-img">
+                            <div class="zoom-hint"><i class="fas fa-search-plus"></i> Click to Zoom</div>
                         </div>
                         <button class="gallery-control prev" id="cases-prev" aria-label="Previous"><i
-                                class="fas fa-chevron-right"></i></button>
-                        <button class="gallery-control next" id="cases-next" aria-label="Next"><i
                                 class="fas fa-chevron-left"></i></button>
+                        <button class="gallery-control next" id="cases-next" aria-label="Next"><i
+                                class="fas fa-chevron-right"></i></button>
                     </div>
                 </div>
             </div>
@@ -536,46 +615,46 @@
     <section id="contact" class="section bg-light">
         <div class="container" style="max-width: 800px;">
             <div class="section-header">
-                <h2>اطلب <span class="text-gradient">خدماتنا</span></h2>
+                <h2>Request <span class="text-gradient">Our Services</span></h2>
                 <div class="line"></div>
-                <p style="margin-top: 20px;">دعنا نساعدك في حماية مشروعك بأحدث التقنيات. املأ النموذج وسنتواصل معك
-                    قريباً.</p>
+                <p style="margin-top: 20px;">Let us help you protect your project with the latest technologies. Fill out
+                    the form and we will contact you shortly.</p>
             </div>
 
             <div class="contact-form-container animate-up">
                 <form id="request-form" action="https://formspree.io/f/mykpnrlq" method="POST" class="premium-form">
                     <div class="form-grid">
                         <div class="form-group">
-                            <label for="name">الاسم بالكامل</label>
-                            <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">البريد الإلكتروني</label>
+                            <label for="email">Email</label>
                             <input type="email" id="email" name="email" placeholder="example@mail.com" required>
                         </div>
                         <div class="form-group">
-                            <label for="phone">رقم الجوال</label>
+                            <label for="phone">Mobile Number</label>
                             <input type="tel" id="phone" name="phone" placeholder="05xxxxxxxx" required>
                         </div>
                         <div class="form-group">
-                            <label for="subject">نوع الخدمة/المشروع</label>
+                            <label for="subject">Service/Project Type</label>
                             <select id="subject" name="_subject">
-                                <option value="gaina">تقنية جاينا (العزل الحراري)</option>
-                                <option value="construction">مقاولات عامة وإنشاءات</option>
-                                <option value="consultation">استشارة هندسية</option>
-                                <option value="other">أخرى</option>
+                                <option value="gaina">Gaina Technology (Thermal Insulation)</option>
+                                <option value="construction">General Contracting & Construction</option>
+                                <option value="consultation">Engineering Consultation</option>
+                                <option value="other">Other</option>
                             </select>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="message">تفاصيل الطلب</label>
-                        <textarea id="message" name="message" rows="5" placeholder="اكتب تفاصيل طلبك هنا..."
+                        <label for="message">Request Details</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your request details here..."
                             required></textarea>
                     </div>
                     <input type="hidden" name="_next" value="https://dccc-sa.com/thanks.html">
                     <button type="submit" class="btn btn-primary"
-                        style="width: 100%; border-radius: 12px; padding: 15px;">إرسال الطلب <i
-                            class="fas fa-paper-plane" style="margin-right: 10px;"></i></button>
+                        style="width: 100%; border-radius: 12px; padding: 15px;">Send Request <i
+                            class="fas fa-paper-plane" style="margin-left: 10px;"></i></button>
                 </form>
             </div>
         </div>
@@ -586,27 +665,27 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-info">
-                    <img src="logo.png" alt="التنمية والتعمير"
+                    <img src="logo.png" alt="Tanmia & Construction"
                         style="max-height: 60px; filter: brightness(0) invert(1); margin-bottom: 20px;">
-                    <p>نحن نبني المستقبل، ونحمي استثماراتكم بأفضل التقنيات العالمية.</p>
+                    <p>We build the future, and protect your investments with the best global technologies.</p>
                 </div>
                 <div class="footer-links">
-                    <h3>روابط</h3>
+                    <h3>Links</h3>
                     <ul>
-                        <li><a href="#hero">الرئيسية</a></li>
-                        <li><a href="#projects">المشاريع</a></li>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
                         <li><a href="#gaina">GAINA</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h3>تواصل معنا</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> المملكة العربية السعودية</p>
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Saudi Arabia</p>
                     <p><i class="fas fa-phone"></i> 0578404004</p>
                     <p><i class="fas fa-envelope"></i> Info@dccc-sa.com</p>
                 </div>
             </div>
             <div class="copyright">
-                <p>جميع الحقوق محفوظة &copy; 2026 شركة التنمية والتعمير</p>
+                <p>All rights reserved &copy; 2026 Tanmia & Construction Co.</p>
             </div>
         </div>
     </footer>
